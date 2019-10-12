@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CppSharpTest", "CppSharpTest\CppSharpTest.csproj", "{8376D09A-78A6-42B7-9955-82ACCF256DD0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A578073-6F56-4E89-8FA9-08EB94DAA00E} = {3A578073-6F56-4E89-8FA9-08EB94DAA00E}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppSharpTestNative", "CppSharpTestNative\CppSharpTestNative.vcxproj", "{18469C04-3F22-4016-8F3E-53302942FF2A}"
 EndProject
