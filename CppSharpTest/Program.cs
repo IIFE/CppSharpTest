@@ -11,7 +11,7 @@ namespace CppSharpTest
     {
         static void Main(string[] args)
         {
-            ConsoleDriver.Run(new CppSharpLib());
+            ConsoleDriver.Run(new CppSharpLib());;
         }
     }
 }

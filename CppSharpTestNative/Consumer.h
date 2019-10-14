@@ -1,5 +1,5 @@
 #pragma once
-#include <string>
+#include <Windows.h>
 
 #ifdef CPPSHARPTESTNATIVE_EXPORTS
     #define LIBRARY_API __declspec(dllexport)
@@ -9,10 +9,8 @@
 
 struct LIBRARY_API Consumer
 {
-public:
-    Description descr;
+public:    
+    Consumer(LPCSTR lpsz);
 
-    DWORD value;
-
-    bool DoSomething();
+    LPCSTR m_lpsz;
 };

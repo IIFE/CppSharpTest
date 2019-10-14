@@ -21,12 +21,6 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TypeDefs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sizeofs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Consumer.h">
       <Filter>Header Files</Filter>
     </ClInclude>

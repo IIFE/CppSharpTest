@@ -1,11 +1,8 @@
-#include "pch.h"
 
-#include "Sizeofs.h"
-#include "TypeDefs.h"
+#include "pch.h"
 
 #include "Consumer.h"
 
-bool Consumer::DoSomething()
+Consumer::Consumer(LPCSTR lpsz) : m_lpsz(lpsz)
 {
-    return true;
 }
