@@ -3,7 +3,8 @@
 
 #include <Consumer.h>
 
-extern "C" { void CppSharpTestNative_dll_symbols1(void* __instance, const Consumer& _0) { new (__instance) Consumer(_0); } }
-Consumer& (Consumer::*CppSharpTestNative_dll_symbols2)(const Consumer&) = &Consumer::operator=;
-Consumer& (Consumer::*CppSharpTestNative_dll_symbols3)(Consumer&&) = &Consumer::operator=;
-extern "C" { void CppSharpTestNative_dll_symbols4(Consumer* __instance) { __instance->~Consumer(); } }
+Base& (Base::*CppSharpTestNative_dll_symbols1)(const Base&) = &Base::operator=;
+extern "C" { void CppSharpTestNative_dll_symbols2(void* __instance, const Base& _0) { new (__instance) Base(_0); } }
+extern "C" { void CppSharpTestNative_dll_symbols3(void* __instance, const Derived& _0) { new (__instance) Derived(_0); } }
+Derived& (Derived::*CppSharpTestNative_dll_symbols4)(const Derived&) = &Derived::operator=;
+Derived& (Derived::*CppSharpTestNative_dll_symbols5)(Derived&&) = &Derived::operator=;

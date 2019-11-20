@@ -1,5 +1,5 @@
 #pragma once
-#include <Windows.h>
+#include <string>
 
 #ifdef CPPSHARPTESTNATIVE_EXPORTS
     #define LIBRARY_API __declspec(dllexport)
@@ -7,10 +7,22 @@
     #define LIBRARY_API __declspec(dllimport)
 #endif
 
-struct LIBRARY_API Consumer
+class LIBRARY_API Base
 {
-public:    
-    Consumer(LPCSTR lpsz);
+public:
+    Base();
+    virtual ~Base();
 
-    LPCSTR m_lpsz;
+    virtual void DoSomething();
+
+    int m_i;
+    double m_d;
+};
+
+class LIBRARY_API Derived : public Base
+{
+public:       
+    Derived();    
+
+    std::string m_s;
 };
